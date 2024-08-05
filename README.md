@@ -1,5 +1,7 @@
 # All Workspace
 
+[![ci](https://github.com/pocketenv-io/all/actions/workflows/ci.yml/badge.svg)](https://github.com/pocketenv-io/all/actions/workflows/ci.yml)
+
 This is a template workspace with homebrew, nix, devenv, devbox, flox and pkgx. It is a starting point for creating a new workspace.
 
 ## 🚀 Quick start
