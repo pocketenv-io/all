@@ -40,6 +40,6 @@ variable "volumes" {
   default = {
     all-workspace = "/home/coder"
     linuxbrew = "/home/linuxbrew/.linuxbrew"
-    nix-store = "/nix"
+    all-nix-store = "/nix"
   }
 }
