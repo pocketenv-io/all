@@ -20,3 +20,4 @@ jobs:
             apply -auto-approve
         env:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: docker ps
