@@ -15,7 +15,7 @@ RUN  apt-get install -y apt-transport-https \
   && apt-get update \
   && apt-get install -y \
   --no-install-recommends \
-  code sudo ca-certificates iptables openssl pigz xz-utils
+  code sudo ca-certificates iptables openssl pigz xz-utils build-essential
 
 RUN curl --proto =https --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install linux --extra-conf "sandbox = false" --init none --no-confirm
 ENV PATH=${PATH}:/nix/var/nix/profiles/default/bin
