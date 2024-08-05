@@ -41,5 +41,6 @@ variable "volumes" {
     all-workspace = "/home/coder"
     linuxbrew = "/home/linuxbrew/.linuxbrew"
     all-nix-store = "/nix"
+    docker-volumes = "/var/lib/docker"
   }
 }

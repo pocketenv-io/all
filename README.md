@@ -18,7 +18,7 @@ pocketenv init -t all
 - Flox
 - Nix
 - Devenv
-- Ohmyposh
+- Oh-my-posh
 - Atuin
 - Direnv
 - Git
