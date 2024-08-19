@@ -88,6 +88,10 @@ RUN echo 'eval "$(oh-my-posh init bash --config ~/.oh-my-posh/themes/tokyonight_
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://setup.atuin.sh | bash
 
+RUN curl -fsSL https://github.com/cashapp/hermit/releases/download/stable/install.sh | /bin/bash
+
+ENV PATH=${PATH}:/home/${USER}/bin
+
 ENV BASH_ENV=/home/${USER}/.bashrc
 
 ARG PACKAGES
