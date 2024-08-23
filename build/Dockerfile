@@ -73,7 +73,7 @@ RUN echo 'eval "$(pkgx --shellcode)"' >> .bashrc
 
 ENV PATH=${PATH}:/home/linuxbrew/.linuxbrew/bin
 
-RUN sudo addgroup ${USER} nixbld
+RUN sudo usermod -a -G nixbld ${USER}
 
 ENV FORCE=1
 RUN curl -fsSL https://get.jetpack.io/devbox | bash
