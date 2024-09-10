@@ -25,7 +25,9 @@ ARG USER=coder
 ARG USER_ID=30033
 ARG GROUP_ID=30033
 
-RUN apt-get install -y ruby git direnv unzip
+RUN apt-get install -y ruby git direnv unzip locales
+
+RUN locale-gen en_US.UTF-8
 
 RUN addgroup --gid $GROUP_ID ${USER} \
   && useradd --groups sudo --no-create-home --shell /bin/bash ${USER} --uid ${USER_ID} --gid ${GROUP_ID} \
